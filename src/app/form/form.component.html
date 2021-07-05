@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+    <div class="container mt-5">
+        <div class="row">
+            
+                <div class="col-2 col-md col-sm"><label>Select Breed:</label>
+              </div>
+                <div class="col-6 col-md col-sm"><div class="form-group">
+                    
+                    <select class="form-control form-control"  (change)="selectchange($event)">
+                       
+                <option *ngFor="let breed of list_breed" [value]="breed">{{breed}}</option>
+           
+              </select>
+          </div></div>
+                <div class="col-4 col-md col-sm">
+                    <button  type="button"(click)="onSubmit()" [disabled]="isButtonDisabled" [routerLink]="['/images']" class="btn btn-primary ">Submit</button>
+                </div>
+                    
+                    
+            
+
+        </div>
+    </div>
+</form>
+  
+</body>
+</html>
