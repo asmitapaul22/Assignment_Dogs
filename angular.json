@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Dogs"
+    }
+  },
+  "defaultProject": "Dogs",
+  "cli": {
+    "analytics": false
+  }
 }

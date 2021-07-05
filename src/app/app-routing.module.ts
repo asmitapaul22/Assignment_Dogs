@@ -5,9 +5,10 @@ import { FormComponent } from './form/form.component';
 import { ImagesComponent } from './images/images.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'form',pathMatch:"full"},
-  {path:"form",component:FormComponent},
-  {path:"images",component:ImagesComponent, canActivate:[AuthGuard]},
+  // to redirect to form page
+  { path: '', redirectTo: 'form', pathMatch: "full" },
+  { path: "form", component: FormComponent },
+  { path: "images", component: ImagesComponent, canActivate: [AuthGuard] },
 ];
 
 @NgModule({
